@@ -16,6 +16,8 @@
 		D393ED2E277CE2CF008566EF /* DetailPersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393ED2D277CE2CF008566EF /* DetailPersonListTableViewController.swift */; };
 		D393ED30277CE320008566EF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393ED2F277CE320008566EF /* TabBarViewController.swift */; };
 		D393ED32277CE5D8008566EF /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393ED31277CE5D8008566EF /* PersonViewController.swift */; };
+		D393ED34277CE871008566EF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393ED33277CE871008566EF /* DataManager.swift */; };
+		D393ED36277CEA06008566EF /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393ED35277CEA06008566EF /* PersonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		D393ED2D277CE2CF008566EF /* DetailPersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonListTableViewController.swift; sourceTree = "<group>"; };
 		D393ED2F277CE320008566EF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D393ED31277CE5D8008566EF /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		D393ED33277CE871008566EF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D393ED35277CEA06008566EF /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +66,60 @@
 		D393ED16277CE20C008566EF /* PersonList */ = {
 			isa = PBXGroup;
 			children = (
-				D393ED17277CE20C008566EF /* AppDelegate.swift */,
-				D393ED19277CE20C008566EF /* SceneDelegate.swift */,
-				D393ED1D277CE20C008566EF /* Main.storyboard */,
-				D393ED20277CE20D008566EF /* Assets.xcassets */,
-				D393ED22277CE20D008566EF /* LaunchScreen.storyboard */,
-				D393ED25277CE20D008566EF /* Info.plist */,
+				D393ED33277CE871008566EF /* DataManager.swift */,
+				D393ED38277CFB65008566EF /* Model */,
+				D393ED37277CFB5B008566EF /* ViewControllers */,
+				D393ED39277CFCAB008566EF /* Resources */,
+				D393ED3A277CFCC1008566EF /* Storyboards */,
+				D393ED3B277CFCED008566EF /* SupportFiles */,
+			);
+			path = PersonList;
+			sourceTree = "<group>";
+		};
+		D393ED37277CFB5B008566EF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				D393ED2B277CE2AC008566EF /* PersonListTableViewController.swift */,
 				D393ED2D277CE2CF008566EF /* DetailPersonListTableViewController.swift */,
 				D393ED2F277CE320008566EF /* TabBarViewController.swift */,
 				D393ED31277CE5D8008566EF /* PersonViewController.swift */,
 			);
-			path = PersonList;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D393ED38277CFB65008566EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D393ED35277CEA06008566EF /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D393ED39277CFCAB008566EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D393ED20277CE20D008566EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D393ED3A277CFCC1008566EF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D393ED1D277CE20C008566EF /* Main.storyboard */,
+				D393ED22277CE20D008566EF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D393ED3B277CFCED008566EF /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D393ED17277CE20C008566EF /* AppDelegate.swift */,
+				D393ED19277CE20C008566EF /* SceneDelegate.swift */,
+				D393ED25277CE20D008566EF /* Info.plist */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +196,8 @@
 				D393ED18277CE20C008566EF /* AppDelegate.swift in Sources */,
 				D393ED32277CE5D8008566EF /* PersonViewController.swift in Sources */,
 				D393ED2E277CE2CF008566EF /* DetailPersonListTableViewController.swift in Sources */,
+				D393ED34277CE871008566EF /* DataManager.swift in Sources */,
+				D393ED36277CEA06008566EF /* PersonModel.swift in Sources */,
 				D393ED1A277CE20C008566EF /* SceneDelegate.swift in Sources */,
 				D393ED30277CE320008566EF /* TabBarViewController.swift in Sources */,
 				D393ED2C277CE2AC008566EF /* PersonListTableViewController.swift in Sources */,
@@ -303,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PH742CML4S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonList/Info.plist;
+				INFOPLIST_FILE = PersonList/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PH742CML4S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonList/Info.plist;
+				INFOPLIST_FILE = PersonList/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
